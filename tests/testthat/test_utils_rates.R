@@ -21,3 +21,10 @@ test_that("rejects non-positive person-time", {
   expect_error(inc_rate_ci(1, 0))
   expect_error(inc_rate_ci(1, -5))
 })
+
+library(testthat)
+
+
+testthat::test_dir("tests/testthat", reporter = "summary")
+
+
